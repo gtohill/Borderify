@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 2,
+  "name": "Borderify",
+  "version": "1.0",
+
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "browser_action": {
+  "default_icon": {
+    "19": "icons/desktop.png",
+    "38": "icons/desktop.png"
+  },
+  
+  "default_title": "Whereami?"
+},
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+
+}
